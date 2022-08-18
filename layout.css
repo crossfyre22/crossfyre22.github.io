@@ -1,0 +1,348 @@
+
+/***********************
+ * Structural elements *
+ ***********************/
+
+/* Surrounding elements 
+   ==================== */
+
+BODY {
+    overflow-y: scroll;
+    font-size: 14px;
+    margin: 1.0em 0 1.0em 0;
+    color: black;
+    /*TODO*/background-repeat: repeat-x;
+    font-style: normal;
+    
+    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #8c8c8c;
+}
+
+#container {
+    margin: 0px auto 0 auto;
+    width: 1000px; /*83em;*/
+    color: black;
+    background-color: white;
+    
+    
+}
+
+/* Top bar 
+   ======= */
+
+#headerrow {
+    /*
+      height:12.5em;
+      */
+    height:17em;
+}
+
+#leftheader {
+    color: white;
+    
+    width: 250px; /*17.5em;*/
+    
+    text-align: center;
+    vertical-align: top;
+    
+
+    border-top: 1px solid #8c8c8c;
+    border-left: 1px solid #8c8c8c;
+    background-color: #f39200;
+}
+
+#headerbar {
+    width: 750px;
+    height: 350px;
+
+    margin: 0 1em 0 1em;
+    
+    text-align: right;
+    vertical-align: bottom;
+    
+    background-image: url(./images/passau.jpg);
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: white;
+    
+    border-top: 1px solid #8c8c8c;
+    border-right: 1px solid #8c8c8c;
+    border-left: 2px solid #f39200;
+}
+
+
+/* Middle bar 
+   ========== */
+
+
+#middlerow {
+    /*TODO*/height: 37.5em;		/* minimum height */
+}
+
+#menubar {		
+    color: #8c8c8c;
+    
+    width: 250px; /*17.5em;*/
+    
+    text-align: right;
+    vertical-align: top;
+    
+    background-color: #f39200; 
+    
+    border-left: 1px solid #8c8c8c;	
+}
+
+#contentcell {		
+    width: 750px;/*65.5em;*/
+    vertical-align: top;
+    border-right: 1px solid #8c8c8c;
+    border-left: 2px solid #f39200;
+}
+
+
+/* Bottom bar 
+   ========== */
+
+#footerrow {
+    height: 5em;
+}
+
+#leftfooter {
+    color: #8c8c8c;
+    
+    width: 250px;
+
+    background-color: #f39200;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    
+/*    background-image: url(./images/unipassau.png);*/
+	
+    border-bottom: 1px solid #8c8c8c;
+    border-left: 1px solid #8c8c8c;
+}
+
+#footerbar {
+    width: 750px;/*65.5em;*/
+    
+    text-align: right;
+    vertical-align: bottom;
+    
+    border-right: 1px solid #8c8c8c;
+    border-bottom: 1px solid #8c8c8c;
+    border-left: 2px solid #f39200;
+}
+
+#sponsors {
+    float: left;
+}
+
+#sponsors img {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/********************************************************
+ * Top level text structures (mainly division elements) *
+ ********************************************************/
+
+/* Top bar 
+   ======= */
+
+#leftheadertext {
+    font-size: 18px;
+    font-weight: bold;
+    
+    margin: 0.7em 0 0 0;
+}
+
+#rightheadertext {
+    font-size: 22px;
+/*  font-weight: bold;*/
+    color: white;
+    text-align: center;
+    background-color: #f39200; 
+
+    padding: 4px 0px 4px 0px;
+}
+
+#headerrule {
+    display: none;
+    border: 0px;
+    height: 0px;
+/*size: 0px;*/
+}
+
+/* Middle bar (menu in separate section) 
+   ===================================== */
+
+#pagetitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f39200;
+    
+    margin: 0.5em 0.4em 1em 0.6em;
+
+    text-align: left;
+}
+
+#iacrlogo {
+    margin: 0.5em 0 0 0;
+    padding: 0 1em 1em 0;
+    float: right;
+}
+
+#content {
+    margin: 1em 5em 1em 4em;		
+}
+
+
+/* Bottom bar 
+   ========== */
+
+#footertext {
+    font-size: 9px;
+    color: #8c8c8c;
+    
+    margin: 0em 1.2em 1em 1.2em;
+    padding-top: 0.7em;
+    
+    border-top: 1px solid #8c8c8c;
+}
+
+#footerrule {		
+    display: none;
+    border: 0px;
+    height: 0px;
+}
+
+
+/***********************
+ * The dreaded menu... *
+ ***********************/
+
+/* div settings
+   ============ */
+
+#menu {
+    margin: 0 1em 3em 1em;
+/*border-top: 1px solid #cccccc;*/
+}
+
+.submenu {
+    padding: 1em 0.5em 1em 0;
+    border-bottom: 1px dotted #8c8c8c;
+}
+
+.selectedsubmenu {
+}
+
+.menuhead {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    
+    padding-bottom: 4px;
+}
+
+.menuitem {
+    color: #8c8c8c;
+    line-height: 1.6em;		
+}
+
+
+
+/* settings per link in the menu
+   ============================= */
+
+/*******************
+ * Anchor elements *
+ *******************/
+a[href] {
+    color: #f39200;
+    text-decoration: none;
+}	
+a[href]:visited {
+    color: #f39200;
+    text-decoration: none;
+}
+a[href]:hover {
+    color: #f39200;
+    text-decoration: underline;     
+}
+
+/* menuitem */
+
+.menuitem A:link {
+    color: white;
+    text-decoration: none;
+}
+
+.menuitem A:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.menuitem A:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.menuitem A:active {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.menuitem A:focus {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+/* menuheads as links */
+
+.menuhead A:link {
+    color: white;
+    text-decoration: none;
+}
+
+.menuhead A:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.menuhead A:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.menuhead A:active {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.menuhead A:focus {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.test
+{
+    text-align : justify;
+}
+
+.alert
+{
+    font-weight: bold;
+}
+
+.archive
+{
+    color: #8c8c8c;
+}
+
+.out{
+    text-decoration: line-through;
+}
